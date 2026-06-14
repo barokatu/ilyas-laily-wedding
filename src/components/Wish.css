@@ -1,0 +1,129 @@
+.wish {
+  background: var(--cream);
+  padding: 70px 32px 64px;
+  text-align: center;
+}
+
+.wish__head {
+  margin-bottom: 26px;
+}
+.wish__title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 34px;
+  color: var(--green-deep);
+  margin: 8px 0 0;
+}
+
+.wish__form {
+  max-width: 360px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.wish__form input,
+.wish__form textarea {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--brown);
+  background: var(--cream-2);
+  border: 1px solid #e6e0db;
+  border-radius: 3px;
+  padding: 13px 14px;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+.wish__form input::placeholder,
+.wish__form textarea::placeholder {
+  color: var(--placeholder);
+}
+.wish__form input:focus,
+.wish__form textarea:focus {
+  border-color: var(--green);
+}
+.wish__form button {
+  background: var(--green);
+  color: var(--cream);
+  border: none;
+  border-radius: 3px;
+  padding: 14px;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+.wish__form button:hover {
+  background: var(--green-deep);
+}
+.wish__wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.wish__wa svg {
+  margin-top: -1px;
+}
+
+.wish__list {
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 320px;
+  overflow-y: auto;
+  text-align: left;
+  padding-right: 4px;
+}
+.wish__item {
+  background: var(--cream-2);
+  border-radius: 4px;
+  padding: 14px 16px;
+  border-left: 2px solid var(--green);
+}
+.wish__name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--green-deep);
+  margin: 0 0 4px;
+}
+.wish__msg {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--brown);
+  margin: 0;
+}
+
+.wish__closing {
+  margin-top: 54px;
+}
+.wish__salam {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--green-deep);
+  margin: 0 0 18px;
+}
+.wish__thanks {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--brown-soft);
+  max-width: 340px;
+  margin: 0 auto 26px;
+}
+.wish__from {
+  font-size: 13px;
+  color: var(--brown);
+  margin: 0 0 6px;
+}
+.wish__couple {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--green-deep);
+  margin: 0;
+}

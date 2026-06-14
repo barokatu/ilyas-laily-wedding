@@ -1,0 +1,87 @@
+.gift {
+  background: var(--cream-2);
+  padding: 30px 32px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift__ornament {
+  width: 140px;
+  opacity: 0.85;
+}
+.gift__ornament--top {
+  margin-bottom: 16px;
+}
+.gift__ornament--bottom {
+  margin-top: 24px;
+  transform: scaleY(-1);
+}
+
+.gift__head {
+  max-width: 360px;
+}
+.gift__title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 34px;
+  color: var(--green-deep);
+  margin: 8px 0 0;
+}
+.gift__notes {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--brown-soft);
+  margin: 0 0 26px;
+}
+
+.gift__cards {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.gift__card {
+  background: var(--cream);
+  border: 1px solid rgba(105, 136, 108, 0.22);
+  border-radius: 5px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 26px rgba(48, 60, 48, 0.08);
+}
+.gift__bank {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--green-deep);
+}
+.gift__number {
+  font-size: 18px;
+  letter-spacing: 0.16em;
+  color: var(--brown);
+  margin: 8px 0 4px;
+}
+.gift__holder {
+  font-size: 12px;
+  color: var(--brown-soft);
+  margin-bottom: 16px;
+}
+.gift__copy {
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green-deep);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.gift__copy:hover {
+  background: var(--green);
+  color: var(--cream);
+}

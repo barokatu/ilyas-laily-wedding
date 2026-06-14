@@ -1,0 +1,155 @@
+.rsvp {
+  position: relative;
+  background-color: var(--cream);
+  background-size: cover;
+  background-position: center bottom;
+  padding: 74px 32px 80px;
+  text-align: center;
+}
+.rsvp__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(249, 247, 246, 0.92),
+    rgba(249, 247, 246, 0.7)
+  );
+}
+.rsvp__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.rsvp__title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--green-deep);
+  margin: 8px 0 0;
+}
+.rsvp__lead {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--brown-soft);
+  margin: 0 0 30px;
+}
+
+.rsvp__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+.rsvp__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rsvp__field > span {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+.rsvp__field input,
+.rsvp__field select {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--input, #5e5352);
+  background: var(--cream);
+  border: 1px solid #e6e0db;
+  border-radius: 3px;
+  padding: 13px 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.rsvp__field input::placeholder {
+  color: var(--placeholder);
+}
+.rsvp__field input:focus,
+.rsvp__field select:focus {
+  border-color: var(--green);
+}
+
+.rsvp__choices {
+  display: flex;
+  gap: 12px;
+}
+.rsvp__choices label {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #e6e0db;
+  border-radius: 3px;
+  padding: 12px 0;
+  font-size: 13px;
+  color: var(--brown);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rsvp__choices label.is-on {
+  border-color: var(--green);
+  background: rgba(105, 136, 108, 0.1);
+  color: var(--green-deep);
+}
+.rsvp__choices label.is-on.is-no {
+  border-color: var(--red);
+  background: rgba(135, 51, 51, 0.08);
+  color: var(--red);
+}
+.rsvp__choices input {
+  display: none;
+}
+
+.rsvp__submit {
+  margin-top: 8px;
+  background: var(--green);
+  color: var(--cream);
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.rsvp__submit svg {
+  margin-top: -1px;
+}
+.rsvp__submit:hover {
+  background: var(--green-deep);
+}
+
+.rsvp__thanks {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(105, 136, 108, 0.25);
+  border-radius: 4px;
+  padding: 30px 24px;
+}
+.rsvp__thanks h3 {
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--green-deep);
+  margin: 0 0 10px;
+}
+.rsvp__thanks p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--brown);
+  margin: 0 0 18px;
+}
+.rsvp__edit {
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green-deep);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 2px;
+}

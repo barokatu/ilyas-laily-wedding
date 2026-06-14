@@ -1,0 +1,35 @@
+.music {
+  position: fixed;
+  bottom: 22px;
+  right: calc(50% - var(--maxw) / 2 + 20px);
+  z-index: 90;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: var(--green);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 22px rgba(48, 60, 48, 0.32);
+}
+.music svg {
+  animation: spin 4s linear infinite;
+  animation-play-state: paused;
+}
+.music--on svg {
+  animation-play-state: running;
+}
+
+@media (max-width: 520px) {
+  .music {
+    right: 18px;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

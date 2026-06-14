@@ -1,0 +1,126 @@
+.opening {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  background-color: var(--cream);
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 28px;
+  transition: transform 1.1s cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 1.1s ease, visibility 1.1s;
+  transform: translateY(0);
+}
+
+.opening--gone {
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.opening__ornament {
+  position: absolute;
+  left: 50%;
+  width: 64%;
+  max-width: 320px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.opening__ornament--top {
+  top: 26px;
+  transform: translateX(-50%);
+}
+.opening__ornament--bottom {
+  bottom: 26px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.opening__inner {
+  position: relative;
+  z-index: 2;
+  animation: opening-in 1.4s ease both;
+}
+
+.opening__eyebrow {
+  margin: 0 0 22px;
+}
+
+.opening__names {
+  font-family: var(--serif);
+  color: var(--green-deep);
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.02;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.opening__and {
+  width: 40px;
+  height: auto;
+  margin: 6px 0;
+  opacity: 0.85;
+}
+
+.opening__date {
+  font-family: var(--sans);
+  letter-spacing: 0.42em;
+  font-size: 13px;
+  color: var(--brown);
+  margin: 18px 0 0;
+  padding-left: 0.42em;
+}
+
+.opening__guest {
+  margin: 8px 0 30px;
+}
+.opening__guest-label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--brown-soft);
+  margin: 0 0 4px;
+}
+.opening__guest-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--brown);
+  margin: 0;
+}
+
+.opening__btn {
+  border: 1px solid var(--green);
+  background: transparent;
+  color: var(--green-deep);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  border-radius: 2px;
+  transition: background 0.4s ease, color 0.4s ease, letter-spacing 0.4s ease;
+}
+.opening__btn:hover {
+  background: var(--green);
+  color: var(--cream);
+  letter-spacing: 0.34em;
+}
+
+@keyframes opening-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,108 @@
+:root {
+  --green: #69886c;
+  --green-deep: #4f6b52;
+  --cream: #f9f7f6;
+  --cream-2: #f3efec;
+  --brown: #5e5352;
+  --brown-soft: #8a7d78;
+  --label: #919191;
+  --placeholder: #b3aaa0;
+  --red: #873333;
+  --maxw: 480px; /* invitation column is phone-width, centered */
+
+  --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--brown);
+  background: #2b2b2b; /* gutter color around the centered invitation */
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: var(--sans);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+/* The whole invitation lives in a fixed-width centered column,
+   the way the original mobile-first template renders. */
+.invitation {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
+}
+
+/* shared typographic helpers */
+.eyebrow {
+  font-family: var(--sans);
+  font-weight: 300;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--green);
+}
+
+.script,
+.display {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--green-deep);
+  line-height: 1.05;
+}
+
+.divider {
+  width: 46px;
+  height: 1px;
+  background: var(--green);
+  margin: 18px auto;
+  opacity: 0.6;
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+section {
+  position: relative;
+}
