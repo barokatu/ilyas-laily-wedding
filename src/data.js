@@ -12,8 +12,8 @@ export const wedding = {
     eventName: 'The Wedding of',
     nicknameGroom: 'Ilyas',
     nicknameBride: 'Laily',
-    photoDesktop: `${A}/couple-4.jpeg`,
-    photoMobile: `${A}/couple-4.jpeg`,
+    photoDesktop: `${A}/couple-4.webp`,
+    photoMobile: `${A}/couple-4.webp`,
   },
 
   quotes: {
@@ -56,24 +56,24 @@ export const wedding = {
 
   // Real couple photos from the pre-wedding shoot.
   galleryPhotos: [
-    `${A}/couple-1.jpeg`,
-    `${A}/couple-2.jpeg`,
-    `${A}/couple-3.jpeg`,
-    `${A}/couple-4.jpeg`,
+    `${A}/couple-1.webp`,
+    `${A}/couple-2.webp`,
+    `${A}/couple-3.webp`,
+    `${A}/couple-4.webp`,
   ],
 }
 
 export const assets = {
-  openingBgDesktop: `${A}/texture-bg-link-cover2x-vovU8fK-o.png`,
-  openingBgMobile: `${A}/texture-bg-link-cover-mobile2x-p-SHG0Mx8.png`,
-  openingOrnament: `${A}/opening_patter-T9LUBQoZ_.png`,
+  openingBgDesktop: `${A}/texture-bg-link-cover2x-vovU8fK-o.webp`,
+  openingBgMobile: `${A}/texture-bg-link-cover-mobile2x-p-SHG0Mx8.webp`,
+  openingOrnament: `${A}/opening_patter-T9LUBQoZ_.webp`,
   shapeAnd: `${A}/shape2x-1-1pkDJE1aQ.png`,
   shapeAnd2: `${A}/shape2x-2-LnZJhZjWI.png`,
 
-  coverBgDesktop: `${A}/bg-cover-dalam2x-9tY6ybWNX.png`,
-  coverBgMobile: `${A}/mask2xmobileinsidecover-Ay4VuuECG.png`,
-  treeLeft: `${A}/pohon-part-to-animate2x-LbfGBjERH.png`,
-  treeRight: `${A}/pohon-part-2-to-animate2x-DgCbYkvNZ.png`,
+  coverBgDesktop: `${A}/bg-cover-dalam2x-9tY6ybWNX.webp`,
+  coverBgMobile: `${A}/mask2xmobileinsidecover-Ay4VuuECG.webp`,
+  treeLeft: `${A}/pohon-part-to-animate2x-LbfGBjERH.webp`,
+  treeRight: `${A}/pohon-part-2-to-animate2x-DgCbYkvNZ.webp`,
 
   quoteContainerDesktop: `${A}/quote2x-qTca-Gaod.png`,
   quoteContainerMobile: `${A}/quote2xmobilequote-6QxHp63Z2.png`,
@@ -83,12 +83,12 @@ export const assets = {
   brideBottomDesktop: `${A}/72x-PRG54AWHj.png`,
   brideBottomMobile: `${A}/72xmobilebottomornamentbride-tvTr1-jtQ.png`,
 
-  rsvpTree: `${A}/tree2x-ig2y4mO0w.png`,
-  rsvpPattern: `${A}/pattern2x-3-qNos38B3m.png`,
+  rsvpTree: `${A}/tree2x-ig2y4mO0w.webp`,
+  rsvpPattern: `${A}/pattern2x-3-qNos38B3m.webp`,
 
   giftTop: `${A}/7-copy2x-R0RvQD2E3.png`,
   giftBottom: `${A}/72x-1-d0_MoLx8l.png`,
 
-  coverPhoto: `${A}/couple-4.jpeg`,
-  coverPhotoMobile: `${A}/couple-4.jpeg`,
+  coverPhoto: `${A}/couple-4.webp`,
+  coverPhotoMobile: `${A}/couple-4.webp`,
 }
